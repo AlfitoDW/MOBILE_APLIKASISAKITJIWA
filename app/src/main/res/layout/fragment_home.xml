@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    tools:context="ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_subtitle"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_below="@+id/tv_title"/>
+
+    <Button
+        android:id="@+id/btn_new_journal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_journal"
+        android:textAllCaps="false"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tv_subtitle"/>
+    <TextView
+        android:id="@+id/tv_your_journal_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_your_journal_title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/btn_new_journal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_journal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_your_journal_title"/>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_empty"
+        android:visibility="invisible"
+        android:layout_below="@+id/tv_your_journal_title"/>
+</RelativeLayout>
