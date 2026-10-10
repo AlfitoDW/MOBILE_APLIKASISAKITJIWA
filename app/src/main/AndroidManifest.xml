@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ALFITO_DARMA_WIJAYA">
         <activity
+            android:name=".ui.WriteJournalActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">

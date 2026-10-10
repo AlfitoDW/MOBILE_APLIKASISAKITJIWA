@@ -5,7 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="tv_title">Ayo Buat Jurnalmu Sekarang!</string>
     <string name="tv_subtitle">Ekspresikan Harimu dengan Jurnal</string>
-    <string name= "new_journal">Buat jurnal Baru</string>
-    <string name= "tv_your_journal_title">Jurnal-Jural Kamu</string>
-    <string name= "tv_empty">Belum ada jurnal</string>
+    <string name="new_journal">Buat jurnal Baru</string>
+    <string name="tv_your_journal_title">Jurnal-Jural Kamu</string>
+    <string name="tv_empty">Belum ada jurnal</string>
 </resources>
